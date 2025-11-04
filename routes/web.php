@@ -2,17 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Di file inilah kita mendefinisikan semua route (rute URL)
-| yang akan digunakan dalam aplikasi Laravel kita.
-|
-*/
-
 Route::get('/', function () {
-    // Mengarahkan ke file resources/views/home.blade.php
     return view('home');
+});
+
+Route::get('/produk', function () {
+    return view('produk');
+});
+
+// Kirim array data jenis produk ke form tambah produk
+Route::get('/tambahproduk', function () {
+    $jenisProduk = ['Alat tulis', 'Elektronik', 'Sembako'];
+    return view('tambahproduk', ['jenisProduk' => $jenisProduk]);
 });
