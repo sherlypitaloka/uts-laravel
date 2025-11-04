@@ -2,21 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Di file inilah kita mendefinisikan semua route (rute URL)
+| yang akan digunakan dalam aplikasi Laravel kita.
+|
+*/
 
 Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/mahasiswa', function () {
-    return view('mahasiswa');
-});
-
-Route::get('/profile', function () {
-    $nama = 'Sherly Pitaloka';
-    // return view('profile', compact('nama'));
-    return view('profile')->with('nama', $nama);
+    // Mengarahkan ke file resources/views/home.blade.php
+    return view('home');
 });
