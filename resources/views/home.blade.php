@@ -84,10 +84,10 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="#">Home</a>
+                    <a class="nav-link fw-semibold" href="">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link produk" href="#">Produk</a>
+                    <a class="nav-link produk" href="/produk">Produk</a>
                 </li>
             </ul>
             <form class="d-flex mt-3" role="search">
